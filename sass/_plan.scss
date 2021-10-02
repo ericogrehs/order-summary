@@ -1,0 +1,33 @@
+@use 'theme';
+
+#plan-infos {
+  padding: 16px;
+  background-color: theme.$neutral-color-pale;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+#plan-texts-container {
+  margin-left: 16px;
+  flex-grow: 1;
+}
+
+#plan-name {
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+#plan-value {
+  color: theme.$neutral-color-desaturated;
+}
+
+#plan-change-text {
+  font-size: 14px;
+  font-weight: 900;
+  &:hover {
+    text-decoration: none;
+    color: theme.$primary-color-hover;
+  }
+}

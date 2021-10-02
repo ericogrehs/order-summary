@@ -1,0 +1,26 @@
+@use 'theme';
+
+@mixin button($bgColor, $color) {
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 900;
+  background-color: $bgColor;
+  color: $color;
+  cursor: pointer;
+}
+
+.button-primary {
+  @include button(theme.$primary-color-bright, white);
+  box-shadow: 0px 12px 32px -10px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background-color: theme.$primary-color-hover;
+  }
+}
+
+.button-secondary {
+  @include button(transparent, theme.$neutral-color-desaturated);
+  &:hover {
+    color: black;
+  }
+}
