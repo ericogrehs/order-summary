@@ -1,0 +1,30 @@
+@use 'breakpoints';
+
+#card-container {
+  border-radius: 16px;
+  height: 600px;
+  width: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 32px -10px rgba(0, 0, 0, 0.1);
+  @media screen and (max-width: breakpoints.$small) {
+    width: 320px;
+    height: 560px;
+  }
+}
+
+#card-img {
+  border-radius: 16px 16px 0px 0px;
+}
+
+#card-infos {
+  height: 100%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (max-width: breakpoints.$small) {
+    padding: 24px;
+  }
+}
