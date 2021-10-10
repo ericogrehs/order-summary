@@ -8,6 +8,7 @@
   background-color: $bgColor;
   color: $color;
   cursor: pointer;
+  @include theme.text-p();
 }
 
 .button-primary {

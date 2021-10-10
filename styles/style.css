@@ -18,27 +18,34 @@
 }
 
 #plan-name {
+  font-size: 16px;
   font-weight: 900;
   margin-bottom: 4px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   #plan-name {
     font-size: 14px;
   }
 }
 
 #plan-value {
+  font-size: 16px;
   color: #7280a7;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   #plan-value {
     font-size: 14px;
   }
 }
 
 #plan-change-text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900;
+}
+@media screen and (max-width: 375px) {
+  #plan-change-text {
+    font-size: 14px;
+  }
 }
 #plan-change-text:hover {
   text-decoration: none;
@@ -53,7 +60,13 @@
   background-color: #3829e0;
   color: white;
   cursor: pointer;
+  font-size: 16px;
   box-shadow: 0px 12px 32px -10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 375px) {
+  .button-primary {
+    font-size: 14px;
+  }
 }
 .button-primary:hover {
   background-color: rgba(56, 41, 224, 0.7);
@@ -67,6 +80,12 @@
   background-color: transparent;
   color: #7280a7;
   cursor: pointer;
+  font-size: 16px;
+}
+@media screen and (max-width: 375px) {
+  .button-secondary {
+    font-size: 14px;
+  }
 }
 .button-secondary:hover {
   color: black;
@@ -75,15 +94,15 @@
 #card-container {
   border-radius: 16px;
   height: 600px;
-  width: 400px;
+  width: 450px;
   background-color: white;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 10px 32px -10px rgba(0, 0, 0, 0.1);
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   #card-container {
-    width: 320px;
+    width: 326px;
     height: 560px;
   }
 }
@@ -99,7 +118,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   #card-infos {
     padding: 24px;
   }
@@ -133,19 +152,21 @@ h1 {
   text-align: center;
   margin-bottom: 16px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   h1 {
     font-size: 20px;
   }
 }
 
 #description {
+  font-size: 16px;
   color: #7280a7;
   text-align: center;
   line-height: 24px;
   margin-bottom: 16px;
+  padding: 0px 20px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   #description {
     font-size: 14px;
   }

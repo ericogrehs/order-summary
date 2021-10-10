@@ -28,7 +28,7 @@ body {
   background-image: url('../images/pattern-background-desktop.svg');
   background-repeat: repeat-x;
   height: 100vh;
-  @include centeredContainer;
+  @include centeredContainer();
 }
 
 h1 {
@@ -42,11 +42,10 @@ h1 {
 }
 
 #description {
+  @include theme.text-p();
   color: theme.$neutral-color-desaturated;
   text-align: center;
   line-height: 24px;
   margin-bottom: 16px;
-  @media screen and (max-width: breakpoints.$small) {
-    font-size: 14px;
-  }
+  padding: 0px 20px;
 }

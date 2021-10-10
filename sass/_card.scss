@@ -3,13 +3,13 @@
 #card-container {
   border-radius: 16px;
   height: 600px;
-  width: 400px;
+  width: 450px;
   background-color: white;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 10px 32px -10px rgba(0, 0, 0, 0.1);
   @media screen and (max-width: breakpoints.$small) {
-    width: 320px;
+    width: 326px;
     height: 560px;
   }
 }

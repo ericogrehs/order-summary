@@ -16,22 +16,18 @@
 }
 
 #plan-name {
+  @include theme.text-p();
   font-weight: 900;
   margin-bottom: 4px;
-  @media screen and (max-width: breakpoints.$small) {
-    font-size: 14px;
-  }
 }
 
 #plan-value {
+  @include theme.text-p();
   color: theme.$neutral-color-desaturated;
-  @media screen and (max-width: breakpoints.$small) {
-    font-size: 14px;
-  }
 }
 
 #plan-change-text {
-  font-size: 14px;
+  @include theme.text-p();
   font-weight: 900;
   &:hover {
     text-decoration: none;
